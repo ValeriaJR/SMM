@@ -7,7 +7,6 @@ import FormData from 'form-data';
 
 export default function Files({ setLoader, setData, data }) {
   const [mostrar, setMostrar] = useState(false)
-  const [fecha] = useState(new Date())
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -19,7 +18,6 @@ export default function Files({ setLoader, setData, data }) {
 
       const formDataPagos = new FormData();
       formDataPagos.append("file", data.pagos);
-      formDataPagos.append("mes", fecha.getUTCMonth() + 1);
 
       // Realizar las peticiones POST concurrentemente
       const [gestiones, pagos] = await Promise.all([
