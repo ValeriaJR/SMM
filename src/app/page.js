@@ -15,7 +15,7 @@ export default function Home() {
    <>
     <nav className="w-full  h-[80px] flex justify-between items-center bg-cyan-500/60">
       <h1 className="letras_nav text-white ml-4 hidden md:block">Secretaria de movilidad</h1>
-      <Image src={"/logo.png"} width={"80"} height={"60"} alt="" />
+      <img src={"/logo.png"} width={"80"} height={"60"} alt="" />
     </nav>
     <section className="flex justify-center">
      <Files 
